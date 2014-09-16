@@ -1,0 +1,23 @@
+/* Buttons
+
+Buttons can and should be clicked.
+
+Markup:
+<button class="c-button-delete">test element </button>
+
+
+Styleguide 1.1
+*/
+
+//hello there guy
+//hello
+
+.c-button-delete {
+    margin-top: 1em;
+    font-size: 90%;
+    padding-left: 0.25em;
+    
+    .aligned-left { 
+      margin-right: 3px;
+    }
+  }

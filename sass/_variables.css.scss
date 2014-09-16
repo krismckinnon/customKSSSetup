@@ -1,0 +1,109 @@
+
+
+/*
+@font-face {
+  font-family: "Titillium Web";
+  src: url('TitilliumWeb/TitilliumWeb-Regular.ttf') format('truetype');
+  font-weight: 'Normal';
+}*/
+
+@font-face {
+    font-family: "OpenSans";
+    src: url('OpenSans/OpenSans-Light.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url('OpenSans/OpenSans-Regular.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url('OpenSans/OpenSans-Semibold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+$themefont: 'OpenSans', sans-serif;
+$secondaryfont: 'OpenSans', sans-serif;
+$font-bold: bold;
+$bright-color: #2c94dd;
+$bright-color-light: adjust-lightness($bright-color, 15);
+$bright-color-lighter: #d3e9f8;
+$orange: #e26e1e;
+$yellow: #ffc424;
+$green: #129d5a;
+$red: #dd4337;
+
+$gray-light: #F6F6F6;
+$gray-light2: #FBFBFB;
+$gray-light3: #FDFDFD;
+$gray: #efefef;
+$gray-border: #E3E3E3;
+$gray-dark: #c4c4c4;
+$gray-dark2: #999;
+$gray-dark3: #777;
+$off-black: rgb(54, 54, 54);
+
+
+$bgcolor-approved: adjust-lightness($green, 59);
+$bgcolor-declined: adjust-lightness($red, 42);
+
+// GTD colors
+/*
+$needs-action-color: adjust-lightness($red, -5);
+$needs-action-bgcolor:  adjust-lightness($red, 40);
+
+$scheduled-color: #777;
+$scheduled-bgcolor: #EEE;
+
+$waiting-color: adjust-lightness($yellow, -20);
+$waiting-bgcolor: adjust-lightness($yellow, 32);
+*/
+
+         
+
+ //social media colors
+ .color-facebook  {      color: #3c5b9b; }
+ .color-twitter {       color:  #2daae1; }
+ .color-linkedin {      color: #0173b2; }
+ .color-googleplus {    color: #f63e28; }        
+
+.border-left, .border-right, .border-top { border: 0 !important;}
+
+.border-left {  border-left: 1px solid $gray !important; }  // meant for .columns
+.border-right { border-right: 1px solid $gray !important; }
+.border-top { border-top: 1px solid $gray !important;}
+.border-none { border: 0 !important; }
+.faded-bg { 
+    background-color: rgba(0,0,0,0.25);
+    padding: 0.5em;
+}
+
+i.superscript {
+    font-size: 0.5em !important;
+    vertical-align: super;
+    margin-right: -0.5em;
+    margin-left: -0.25em;
+}
+
+
+.noshadow {
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+
+@mixin background-gradient($from, $to){
+    background: $from; /* Old browsers */
+    background: -moz-linear-gradient(top, $from 0%, $to 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$from), color-stop(100%,$to));
+    background: -webkit-linear-gradient(top, $from 0%,$to 100%);
+    background: -o-linear-gradient(top, $from 0%,$to 100%);
+    background: -ms-linear-gradient(top, $from 0%,$to 100%);
+    background: linear-gradient(to bottom, $from 0%,$to 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=0 );
+}
+
